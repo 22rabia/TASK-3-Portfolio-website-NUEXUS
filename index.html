@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Rabia Kabir's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1 id="name">Rabia Kabir</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="" id="icon"><i class="fa-solid fa-moon"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I am Rabia Kabir, a passionate developer and designer.</p>
+        <a href="#about" class="cta">Learn More About Me</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <img src="img.jpg" alt="Rabia Kabir" height="200px" width="200px">
+        <div class="bio">
+            <h2>About Me</h2>
+            <p>Hello! I'm Rabia Kabir, a web developer and graphic designer with a love for creating beautiful and
+                functional websites. I enjoy working with the latest technologies and am always eager to learn more.</p>
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Python</div>
+                <div class="skill">Graphic Design</div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-cards">
+            <div class="card">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Taste Haven</h3>
+                <p>Responsive resturant website ussing html and css.</p>
+                <a href=" https://22rabia.github.io/Taste-haven-Resturant/">View Project</a>
+            </div>
+            <div class="card">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Craftia</h3>
+                <p>Furniture website using HTML, CSS and bootstrap.</p>
+                <a href="https://22rabia.github.io/craftia/">View Project</a>
+            </div>
+            <div class="card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Car Connect</h3>
+                <p>Rent a car website using HTML, CSS and javascript .</p>
+                <a href="https://22rabia.github.io/Car-Connect-Project/">View Project</a>
+            </div>
+        </div>
+    </section>
+
+<!-- Education Section -->
+<section id="education" class="education">
+    <h2>Education</h2>
+    <div class="timeline">
+        <div class="entry">
+            <h3>Bachelor of Science in Software Engineering</h3>
+            <p>Foundation University School o Science and Technology Rawalpindi, 2021 - 2025</p>
+            <p>3.2 CGPA</p>
+        </div>
+        <div class="entry">
+            <h3>Pre-Engineering</h3>
+            <p>Punjab College Rawalpindi, 2019 - 2021</p>
+            <p>50 %</p>
+        </div>
+    </div>
+</section>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="successMessage"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/rabia-kabir/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/rabiakabir"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/rabiakabir"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 Rabia Kabir. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" id="top"><i class="fa-regular fa-circle-up"></i></a>
+
+ 
+    <script src="script.js" ></script>
+</body>
+
+</html>

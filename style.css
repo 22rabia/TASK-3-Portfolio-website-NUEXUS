@@ -1,0 +1,369 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#name {
+    color: var(--primary-text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-text);
+}
+
+/* Header */
+header {
+    background-color: var(--header-bg);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul {
+    margin-top: 7%;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--primary-bg);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .cta {
+    background-color: var(--secondary-bg);
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: var(--secondary-bg);
+    color: var(--primary-text);
+}
+
+.about img {
+    border-radius: 50%;
+    align-self: center;
+}
+
+.about .bio {
+    max-width: 600px;
+}
+
+.about .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.about .skills .skill {
+    flex: 1 1 30%;
+    background-color: var(--skill-bg);
+    color: var(--primary-text);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.about .skills .skill:hover {
+    transform: scale(1.1);
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects .project-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projects .card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-top: 5px solid var(--border-color);
+    border-bottom: 5px solid var(--border-color);
+}
+
+.projects .card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.projects .card h3 {
+    margin: 15px 0;
+}
+
+.projects .card p {
+    margin: 10px 0;
+    color: var(--secondary-text);
+}
+
+.projects .card a {
+    color: var(--cta-color);
+    font-weight: bold;
+}
+
+.projects .card:hover {
+    transform: scale(1.05);
+}
+
+/* Education Section */
+.education {
+    padding: 50px 20px;
+    background-color: var(--secondary-bg);
+    color: var(--primary-text);
+}
+
+.education h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.entry {
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid var(--border-color);
+    border-right: 5px solid var(--border-color);
+}
+
+.entry h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--secondary-text);
+}
+
+.entry p {
+    margin: 0;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact form label {
+    font-size: 1rem;
+    color: var(--primary-text);
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: var(--input-bg);
+    color: var(--primary-text);
+}
+
+.contact form button {
+    background-color: var(--cta-bg);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: var(--cta-hover);
+}
+
+#successMessage {
+    margin-top: 20px;
+    color: #28a745;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: var(--footer-bg);
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+footer .socials {
+    margin-bottom: 10px;
+}
+
+footer .socials a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Back to Top Button */
+#top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;        
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+}
+
+#top i {
+    color: var(--cta-color);
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects .project-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline {
+        flex-direction: column;
+    }
+
+    .entry {
+        width: 100%;
+    }
+}
+
+/* Light Theme Variables */
+:root {
+    --primary-bg: #ffe4b5;
+    --secondary-bg: #ffebcd;
+    --primary-text: #0e0d0d;
+    --secondary-text: #ff4500;
+    --card-bg: #fff;
+    --skill-bg: #ff7f50;
+    --border-color: #ff4500;
+    --cta-bg: #ff6347;
+    --cta-hover: #ff4500;
+    --cta-color: #ff4500;
+    --footer-bg: #ff7f50;
+    --header-bg: #ff6347;
+    --input-bg: #fff;
+}
+
+/* Dark Theme Variables */
+body.dark-theme {
+    --primary-bg: #333;
+    --secondary-bg: #444;
+    --primary-text: #fff;
+    --secondary-text: #ff7f50;
+    --card-bg: #555;
+    --skill-bg: #ff4500;
+    --border-color: #ff6347;
+    --cta-bg: #ff4500;
+    --cta-hover: #ff7f50;
+    --cta-color: #ff6347;
+    --footer-bg: #222;
+    --header-bg: #444;
+    --input-bg: #555;
+}
